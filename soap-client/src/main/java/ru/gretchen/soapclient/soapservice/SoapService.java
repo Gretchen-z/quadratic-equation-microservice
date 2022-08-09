@@ -1,9 +1,11 @@
 package ru.gretchen.soapclient.soapservice;
 
+import org.springframework.stereotype.Service;
 import ru.gretchen.soapclient.QuadraticEquationService;
 import ru.gretchen.soapclient.QuadraticEquationService_Service;
 import ru.gretchen.soapclient.model.Response;
 
+@Service
 public class SoapService {
 
     public Response solveQuadraticEquation(double a, double b, double c) {
